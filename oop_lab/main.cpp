@@ -6,12 +6,19 @@
 //
 
 #include <iostream>
+using namespace std;
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    for(int i=0;i<5;i++){
-        std::cout<<i;
+    int num;
+    int sum=0;
+    int r;
+    cin>>num;
+    while (num>0){
+        r=num%10;
+        sum+=r;
+        num/=10;
     }
+    cout<<sum<<endl;
     return 0;
 }
